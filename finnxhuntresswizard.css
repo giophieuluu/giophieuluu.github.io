@@ -157,6 +157,10 @@ display: table-cell;
 display: table-row;
 }
 
+.episodeincluded {
+font-size: 13px;
+}
+
 a.feature {
 border-radius: 10px;
 display: block;
