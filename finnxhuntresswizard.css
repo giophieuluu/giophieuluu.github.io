@@ -746,36 +746,6 @@ div.episode0 span {
 font-size: 12px;
 }
 }
-@media screen and (min-width: 360px) {
-#button-bar {
-width: 330px;
-}
-.video-container,
-.video-container iframe {
-height: 186px;
-width: 330px;
-}
-}
-@media screen and (min-width: 460px) {
-#button-bar {
-width: 412px;
-}
-.video-container,
-.video-container iframe {
-height: 232px;
-width: 412px;
-}
-}
-@media screen and (min-width: 600px) {
-#button-bar {
-width: 540px;
-}
-.video-container,
-.video-container iframe {
-height: 304px;
-width: 540px;
-}
-}
 @media screen and (min-width: 640px) {
 div.episode span,
 div.episode0 span {
@@ -797,35 +767,15 @@ div.logo img {
 height: 207px;
 width: 470px;
 }
-.video-container,
-.video-container iframe {
-height: 394px;
-width: 700px;
-}
 }
 @media screen and (min-width: 1024px) {
 .cloud-s5e40 {
 background-size: 2000px;
 }
-#fb,
-.fbp {
-display: inline-block;
-}
 body {
 background-attachment: fixed;
 background-position: center;
 background-size: cover;
-}
-.button {
-left: 18px;
-margin: 0;
-right: auto;
-}
-#fb {
-position: absolute;
-right: 10px;
-text-align: center;
-top: 15px;
 }
 div.featured {
 display: inline-block;
@@ -839,9 +789,6 @@ padding-right: 30px;
 .finnshirt {
 font-size: 26px;
 letter-spacing: 1px;
-}
-a.finn-and-huntresswizard {
-font-size: 14px;
 }
 .green-banner {
 background-size: 250px;
@@ -886,46 +833,6 @@ font-size: 32px;
 .purple-banner div #linhdinh {
 font-size: 14px;
 }
-.relation {
-padding: 0;
-}
-.relation #rtable div {
-padding: 40px 0 6px;
-}
-.relation #current-episode {
-background-color: #e6faff;
-box-shadow: inset 0 -3px 0 0 #036;
-color: #036;
-}
-.relation #current-episode img {
-height: 90px;
-padding: 0;
-position: relative;
-width: 160px;
-}
-.relation a {
-width: auto;
-}
-.relation .red img,
-.relation a img {
-height: 90px;
-transition: all 0.2s ease;
-width: 160px;
-}
-.relation span {
-cursor: default;
-display: block;
-font-size: 12px;
-margin: auto;
-max-width: 90%;
-overflow: hidden;
-padding-top: 4px;
-text-overflow: ellipsis;
-white-space: nowrap;
-}
-.snail {
-right: 100px;
-}
 p.synopsis {
 font-size: 16px;
 }
@@ -951,13 +858,5 @@ width: 210px;
 div.episode span,
 div.episode0 span {
 font-size: 14px;
-}
-#button-bar {
-width: 720px;
-}
-.video-container,
-.video-container iframe {
-height: 405px;
-width: 720px;
 }
 }
