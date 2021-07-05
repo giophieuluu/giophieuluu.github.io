@@ -17,6 +17,15 @@ ul {
 padding: 0;
 }
 
+hr {
+border: 0;
+border-top-style: none;
+border-top-width: 0px;
+border-top: 1px solid #c4c4c4;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
 .relation a:hover img,
 del,
 div.episode a:hover img {
