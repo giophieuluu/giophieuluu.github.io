@@ -2,7 +2,7 @@
 layout: default
 title: Test
 ---
-<!-- Season 9 --><div id="demo">
+<div id="content">
 <p><img src="https://justpaste.it/img/d5e1a39b9950e519c594ca252f634d48.jpg" width="320" /></p>
 <p><span style="font-size:12pt;"><em>Danh sách được xếp từ mới đến cũ</em></span></p>
 <hr/>
@@ -17,15 +17,86 @@ title: Test
 <hr/>
 <p>🌑 Tập 05, 04, 03, 02, 01 <a class="downloadlink" rel="nofollow" href="https://drive.google.com/file/d/1vpLQryEKjbzqSscCuW82kXTcuug_xmOl/view?usp=sharing"> Subtitles 1 </a></p>
 <p class="episodeincluded">Gồm các tập sau: Seventeen · Bonnibel Bubblegum · Son of Rap Bear · Always BMO Closing · The Wild Hunt<br /></p>
+<hr/>
 </div>
 
+<button type="button" onclick="loadDoc1()">Season1</button>
+<button type="button" onclick="loadDoc2()">Season2</button>
+<button type="button" onclick="loadDoc3()">Season3</button>
+<button type="button" onclick="loadDoc4()">Season4</button>
+<button type="button" onclick="loadDoc5()">Season5</button>
+<button type="button" onclick="loadDoc6()">Season6</button>
+<button type="button" onclick="loadDoc7()">Season7</button>
 <button type="button" onclick="loadDoc8()">Season8</button>
 <button type="button" onclick="loadDoc9()">Season9</button>
 <script>
+function loadDoc1() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("content").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "season1.txt");
+  xhttp.send();
+}
+function loadDoc2() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("content").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "season2.txt");
+  xhttp.send();
+}
+function loadDoc3() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("content").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "season3.txt");
+  xhttp.send();
+}
+function loadDoc4() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("content").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "season4.txt");
+  xhttp.send();
+}
+function loadDoc5() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("content").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "season5.txt");
+  xhttp.send();
+}
+function loadDoc6() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("content").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "season6.txt");
+  xhttp.send();
+}
+function loadDoc7() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    document.getElementById("content").innerHTML =
+    this.responseText;
+  }
+  xhttp.open("GET", "season7.txt");
+  xhttp.send();
+}
 function loadDoc8() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-    document.getElementById("demo").innerHTML =
+    document.getElementById("content").innerHTML =
     this.responseText;
   }
   xhttp.open("GET", "season8.txt");
@@ -34,7 +105,7 @@ function loadDoc8() {
 function loadDoc9() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-    document.getElementById("demo").innerHTML =
+    document.getElementById("content").innerHTML =
     this.responseText;
   }
   xhttp.open("GET", "season9.txt");
