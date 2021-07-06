@@ -169,6 +169,7 @@ display: table-row;
 .downloadlink {
 border: 2px solid #3366ff;
 border-radius: 7px;
+color: #3366ff;
 }
 
 .episodeincluded {
