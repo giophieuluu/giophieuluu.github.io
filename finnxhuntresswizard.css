@@ -181,7 +181,7 @@ background: #fff;
 border-radius: 0 0 10px 10px;
 color: #404040;
 margin-bottom: 20px;
-padding: 5px 10px;
+padding: 5px 14px;
 position: relative;
 text-align: left;
 }
@@ -191,10 +191,6 @@ text-align: left;
 a.finn-and-huntresswizard {
 text-align: center;
 position: relative;
-}
-
-.finnshort.with-video {
-z-index: 2;
 }
 
 .finnhat.green {
@@ -358,10 +354,6 @@ border-bottom: 1px solid #b30000;
 color: #b30000;
 }
 
-#season1,#season2,#season3,#season4,#season5,#season6,#season7,#season8,#season9,#miniseries,#distantlands {
-padding-left: 16px;
-}
-
 @media screen and (min-width: 780px) {
 div.logo {
 background-size: auto;
@@ -382,7 +374,7 @@ background-position: center;
 background-size: cover;
 }
 .finnhat {
-padding: 5px 14px;
+padding: 5px 18px;
 }
 .finnhat.green {
 padding-left: 30px;
