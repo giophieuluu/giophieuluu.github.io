@@ -32,6 +32,10 @@ a:hover {
 color: #51aefb;
 }
 
+.banner {
+height: 87.5px;
+width: 320px;
+}
 body {
 background: url(/images/cloudy4.jpg) top no-repeat fixed #67b6f9;
 background-size: 120%;
