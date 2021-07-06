@@ -295,21 +295,77 @@ title: Giờ Phiêu Lưu
 </div>
 
 <script>
-function myFunction9() {document.getElementById("season9").style.display = "block";document.getElementById("season8").style.display = "none";document.getElementById("season7").style.display = "none";document.getElementById("season6").style.display = "none";document.getElementById("season5").style.display = "none";document.getElementById("season4").style.display = "none";document.getElementById("season3").style.display = "none";document.getElementById("season2").style.display = "none";document.getElementById("season1").style.display = "none";document.getElementById("miniseries").style.display = "none";document.getElementById("distantlands").style.display = "none";document.getElementById("seasonnumber").innerHTML = "SEASON 9";}
-function myFunction8() {document.getElementById("season9").style.display = "none";document.getElementById("season8").style.display = "block";document.getElementById("season7").style.display = "none";document.getElementById("season6").style.display = "none";document.getElementById("season5").style.display = "none";document.getElementById("season4").style.display = "none";document.getElementById("season3").style.display = "none";document.getElementById("season2").style.display = "none";document.getElementById("season1").style.display = "none";document.getElementById("miniseries").style.display = "none";document.getElementById("distantlands").style.display = "none";document.getElementById("seasonnumber").innerHTML = "SEASON 8";}
-function myFunction7() {document.getElementById("season9").style.display = "none";document.getElementById("season8").style.display = "none";document.getElementById("season7").style.display = "block";document.getElementById("season6").style.display = "none";document.getElementById("season5").style.display = "none";document.getElementById("season4").style.display = "none";document.getElementById("season3").style.display = "none";document.getElementById("season2").style.display = "none";document.getElementById("season1").style.display = "none";document.getElementById("miniseries").style.display = "none";document.getElementById("distantlands").style.display = "none";document.getElementById("seasonnumber").innerHTML = "SEASON 7";}
-function myFunction6() {document.getElementById("season9").style.display = "none";document.getElementById("season8").style.display = "none";document.getElementById("season7").style.display = "none";document.getElementById("season6").style.display = "block";document.getElementById("season5").style.display = "none";document.getElementById("season4").style.display = "none";document.getElementById("season3").style.display = "none";document.getElementById("season2").style.display = "none";document.getElementById("season1").style.display = "none";document.getElementById("miniseries").style.display = "none";document.getElementById("distantlands").style.display = "none";document.getElementById("seasonnumber").innerHTML = "SEASON 6";}
-function myFunction5() {document.getElementById("season9").style.display = "none";document.getElementById("season8").style.display = "none";document.getElementById("season7").style.display = "none";document.getElementById("season6").style.display = "none";document.getElementById("season5").style.display = "block";document.getElementById("season4").style.display = "none";document.getElementById("season3").style.display = "none";document.getElementById("season2").style.display = "none";document.getElementById("season1").style.display = "none";document.getElementById("miniseries").style.display = "none";document.getElementById("distantlands").style.display = "none";document.getElementById("seasonnumber").innerHTML = "SEASON 5";}
-function myFunction4() {document.getElementById("season9").style.display = "none";document.getElementById("season8").style.display = "none";document.getElementById("season7").style.display = "none";document.getElementById("season6").style.display = "none";document.getElementById("season5").style.display = "none";document.getElementById("season4").style.display = "block";document.getElementById("season3").style.display = "none";document.getElementById("season2").style.display = "none";document.getElementById("season1").style.display = "none";document.getElementById("miniseries").style.display = "none";document.getElementById("distantlands").style.display = "none";document.getElementById("seasonnumber").innerHTML = "SEASON 4";}
-function myFunction3() {document.getElementById("season9").style.display = "none";document.getElementById("season8").style.display = "none";document.getElementById("season7").style.display = "none";document.getElementById("season6").style.display = "none";document.getElementById("season5").style.display = "none";document.getElementById("season4").style.display = "none";document.getElementById("season3").style.display = "block";document.getElementById("season2").style.display = "none";document.getElementById("season1").style.display = "none";document.getElementById("miniseries").style.display = "none";document.getElementById("distantlands").style.display = "none";document.getElementById("seasonnumber").innerHTML = "SEASON 3";}
-function myFunction2() {document.getElementById("season9").style.display = "none";document.getElementById("season8").style.display = "none";document.getElementById("season7").style.display = "none";document.getElementById("season6").style.display = "none";document.getElementById("season5").style.display = "none";document.getElementById("season4").style.display = "none";document.getElementById("season3").style.display = "none";document.getElementById("season2").style.display = "block";document.getElementById("season1").style.display = "none";document.getElementById("miniseries").style.display = "none";document.getElementById("distantlands").style.display = "none";document.getElementById("seasonnumber").innerHTML = "SEASON 2";}
-function myFunction1() {document.getElementById("season9").style.display = "none";document.getElementById("season8").style.display = "none";document.getElementById("season7").style.display = "none";document.getElementById("season6").style.display = "none";document.getElementById("season5").style.display = "none";document.getElementById("season4").style.display = "none";document.getElementById("season3").style.display = "none";document.getElementById("season2").style.display = "none";document.getElementById("season1").style.display = "block";document.getElementById("miniseries").style.display = "none";document.getElementById("distantlands").style.display = "none";document.getElementById("seasonnumber").innerHTML = "SEASON 1";}
-function myFunctionMiniseries() {document.getElementById("season9").style.display = "none";document.getElementById("season8").style.display = "none";document.getElementById("season7").style.display = "none";document.getElementById("season6").style.display = "none";document.getElementById("season5").style.display = "none";document.getElementById("season4").style.display = "none";document.getElementById("season3").style.display = "none";document.getElementById("season2").style.display = "none";document.getElementById("season1").style.display = "none";document.getElementById("miniseries").style.display = "block";document.getElementById("distantlands").style.display = "none";document.getElementById("seasonnumber").innerHTML = "MINISERIES";}
-function myFunctionDistantlands() {document.getElementById("season9").style.display = "none";document.getElementById("season8").style.display = "none";document.getElementById("season7").style.display = "none";document.getElementById("season6").style.display = "none";document.getElementById("season5").style.display = "none";document.getElementById("season4").style.display = "none";document.getElementById("season3").style.display = "none";document.getElementById("season2").style.display = "none";document.getElementById("season1").style.display = "none";document.getElementById("miniseries").style.display = "none";document.getElementById("distantlands").style.display = "block";document.getElementById("seasonnumber").innerHTML = "DISTANT LANDS";}
+var current = "season9";
+function myFunction9() {
+document.getElementById(current).style.display = "none";
+document.getElementById("season9").style.display = "block";
+document.getElementById("seasonnumber").innerHTML = "SEASON 9";
+var current = "season9";
+}
+function myFunction8() {
+document.getElementById(current).style.display = "none";
+document.getElementById("season8").style.display = "block";
+document.getElementById("seasonnumber").innerHTML = "SEASON 8";
+var current = "season8";
+}
+function myFunction7() {
+document.getElementById(current).style.display = "none";
+document.getElementById("season7").style.display = "block";
+document.getElementById("seasonnumber").innerHTML = "SEASON 7";
+var current = "season7";
+}
+function myFunction6() {
+document.getElementById(current).style.display = "none";
+document.getElementById("season6").style.display = "block";
+document.getElementById("seasonnumber").innerHTML = "SEASON 6";
+var current = "season6";
+}
+function myFunction5() {
+document.getElementById(current).style.display = "none";
+document.getElementById("season5").style.display = "block";
+document.getElementById("seasonnumber").innerHTML = "SEASON 5";
+var current = "season5";
+function myFunction4() {
+document.getElementById(current).style.display = "none";
+document.getElementById("season4").style.display = "block";
+document.getElementById("seasonnumber").innerHTML = "SEASON 4";
+var current = "season4";
+function myFunction3() {
+document.getElementById(current).style.display = "none";
+document.getElementById("season3").style.display = "block";
+document.getElementById("seasonnumber").innerHTML = "SEASON 3";
+var current = "season3";
+}
+function myFunction2() {
+document.getElementById(current).style.display = "none";
+document.getElementById("season2").style.display = "block";
+document.getElementById("seasonnumber").innerHTML = "SEASON 2";
+var current = "season2";
+}
+function myFunction1() {
+document.getElementById(current).style.display = "none";
+document.getElementById("season1").style.display = "block";
+document.getElementById("seasonnumber").innerHTML = "SEASON 1";
+var current = "season1";
+}
+function myFunctionMiniseries() {
+document.getElementById(current).style.display = "none";
+document.getElementById("miniseries").style.display = "block";
+document.getElementById("seasonnumber").innerHTML = "MINISERIES";
+var current = "miniseries";
+}
+function myFunctionDistantlands() {
+document.getElementById(current).style.display = "none";
+document.getElementById("distantlands").style.display = "block";
+document.getElementById("seasonnumber").innerHTML = "DISTANT LANDS";
+var current = "distantlands";
+}
 if (window.location.search=="?miniseries"){
 myFunctionMiniseries();
+var current = "miniseries";
 }
 if (window.location.search=="?distantlands"){
 myFunctionDistantlands();
+var current = "distantlands";
 }
 </script>
