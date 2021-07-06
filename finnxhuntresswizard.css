@@ -181,7 +181,7 @@ background: #fff;
 border-radius: 0 0 10px 10px;
 color: #404040;
 margin-bottom: 20px;
-padding: 5px;
+padding: 5px 10px;
 position: relative;
 text-align: left;
 }
@@ -380,6 +380,9 @@ body {
 background-attachment: fixed;
 background-position: center;
 background-size: cover;
+}
+.finnhat {
+padding: 5px 14px;
 }
 .finnhat.green {
 padding-left: 30px;
