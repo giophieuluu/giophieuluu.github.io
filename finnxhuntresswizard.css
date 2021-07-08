@@ -234,11 +234,10 @@ font-weight: 700;
 
 a.navlink {
 background: #008ae6;
+border-radius: 6px;
 color: #fff;
 font-size: 16pt;
-border-radius: 6px;
 padding: 3px 10px;
-margin-top: 18px;
 }
 
 .navnumber {
@@ -248,6 +247,7 @@ color: #fff;
 display: inline-block;
 font-size: 18pt;
 height: 28px;
+margin-bottom: 10px;
 margin-right: 8px;
 overflow: hidden;
 text-align: center;
