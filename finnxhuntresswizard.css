@@ -232,9 +232,9 @@ font-size: 20px;
 font-weight: 700;
 }
 
-.navlink {
+a.navlink {
 background: #008ae6;
-color: #fff !important;
+color: #fff;
 font-size: 16pt;
 border-radius: 6px;
 padding: 3px 10px;
