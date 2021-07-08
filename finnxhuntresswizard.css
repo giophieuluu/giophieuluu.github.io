@@ -243,7 +243,7 @@ font-size: 16pt;
 padding: 3px 10px;
 }
 
-.navnumber {
+a.navnumber {
 background: #008ae6;
 border-radius: 14px;
 color: #fff;
