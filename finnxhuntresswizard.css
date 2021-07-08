@@ -238,20 +238,20 @@ color: #fff;
 font-size: 16pt;
 border-radius: 6px;
 padding: 3px 10px;
-margin-top: 8px;
+margin-top: 18px;
 }
 
 .navnumber {
 background: #008ae6;
-border-radius: 15px;
+border-radius: 14px;
 color: #fff;
 display: inline-block;
-font-size: 19pt;
-height: 30px;
-margin: 4px;
+font-size: 18pt;
+height: 28px;
+margin-right: 8px;
 overflow: hidden;
 text-align: center;
-width: 30px;
+width: 28px;
 }
 
 .purple-banner div span {
