@@ -33,6 +33,7 @@ color: orange;
 }
 
 .banner {
+border: 1px solid #a6a6a6;
 height: 87.5px;
 width: 320px;
 }
