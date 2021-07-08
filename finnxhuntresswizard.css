@@ -260,6 +260,7 @@ width: 28px;
 
 .navlink:hover, .navnumber:hover {
 background: #004d80;
+color: #fff;
 }
 
 .purple-banner div span {
