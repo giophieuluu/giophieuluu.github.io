@@ -152,7 +152,7 @@ background: #4598e6;
 border: 3px solid #e7fbff;
 border-radius: 10px 10px 0 0;
 color: #fff;
-font-size: 22px;
+font-size: 26px;
 margin-top: 20px;
 padding: 3px;
 vertical-align: top;
@@ -242,10 +242,10 @@ padding: 3px 10px;
 
 .navnumber {
 background: #008ae6;
-border-radius:16px;
+border-radius: 16px;
 color: #fff;
 display: inline-block;
-font-size: 21pt;
+font-size: 20pt;
 height: 32px;
 margin: 2px;
 overflow: hidden;
