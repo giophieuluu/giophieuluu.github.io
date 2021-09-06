@@ -6,9 +6,12 @@ title: Giờ Phiêu Lưu
 <div class="finnhat">
 <p>Bởi <img src="/images/bd9612645962f85052b61c6ab13f92bc.jpg" style="width:20px;height:20px;" /> <a href="https://facebook.com/adventuretimevietsub/" style="color:#008000;">Adventure Time Vietsub</a></p>
 <hr/>
-<p><span style="font-size:21pt;"><a class="navnumber" href="javascript:void(0)" onclick="myFunction1()">1</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction2()">2</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction3()">3</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction4()">4</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction5()">5</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction6()">6</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction7()">7</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction8()">8</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction9()">9</a></span></p>
+<p><span style="font-size:21pt;"><a class="navnumber" href="javascript:void(0)" onclick="myFunction1()">1</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction2()">2</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction3()">3</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction4()">4</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction5()">5</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction6()">6</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction7()">7</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction8()">8</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction9()">9</a><a class="navnumber" href="javascript:void(0)" onclick="myFunction10()">10</a></span></p>
 <p><a href="javascript:void(0)" class="navlink" onclick="myFunctionDistantlands()">Distant Lands</a>  <a href="javascript:void(0)" class="navlink" onclick="myFunctionMiniseries()">Miniseries</a></p>
-<hr/>
+<hr/><!-- Season 10 --><div id="season10" style="display:none">
+<p><b>Ủa, season 10 đâu?</b></p>
+<p>Các tập season 10 nằm trong season 9, do CN thay đổi thứ tự và chia lại phần từ season 7 trở đi, nhưng mình giữ thứ tự cũ. Nghĩa là season 7-10 trên CN là season 7-9 ở đây, không thiếu tập nào.</p>
+</div>
 <!-- Season 9 --><div id="season9" style="display:block">
 <p><img src="/images/d5e1a39b9950e519c594ca252f634d48.jpg" class="banner"/></p>
 <p><span style="font-size:12pt;"><em>Danh sách được xếp từ mới đến cũ</em></span></p>
@@ -300,6 +303,12 @@ title: Giờ Phiêu Lưu
 <script>
 current = "season9";
 url = location.search;
+function myFunction10() {
+document.getElementById(current).style.display = "none";
+document.getElementById("season10").style.display = "block";
+document.getElementById("seasonnumber").innerHTML = "Season 10";
+current = "season10";
+}
 function myFunction9() {
 document.getElementById(current).style.display = "none";
 document.getElementById("season9").style.display = "block";
