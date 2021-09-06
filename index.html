@@ -299,6 +299,7 @@ title: Giờ Phiêu Lưu
 
 <script>
 current = "season9";
+url = location.search;
 function myFunction9() {
 document.getElementById(current).style.display = "none";
 document.getElementById("season9").style.display = "block";
@@ -365,11 +366,11 @@ document.getElementById("distantlands").style.display = "block";
 document.getElementById("seasonnumber").innerHTML = "Distant Lands";
 current = "distantlands";
 }
-if (window.location.search=="?miniseries"||window.location.search=="?miniseries\="){
+if (url.charAt(1)=="?m"){
 myFunctionMiniseries();
 current = "miniseries";
 }
-if (window.location.search=="?distantlands"||window.location.search=="?distantlands\="){
+if (url.charAt(1)=="?d"){
 myFunctionDistantlands();
 current = "distantlands";
 }
