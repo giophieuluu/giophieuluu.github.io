@@ -330,6 +330,14 @@ border-bottom: 1px solid #b30000;
 color: #b30000;
 }
 
+.rmenu-o {
+background-color: #fee5fd;
+border-radius: 10px;
+color: #b30000;
+margin: 10px 0;
+padding: 14px;
+}
+
 @media screen and (min-width: 780px) {
 div.logo {
 background-size: auto;
