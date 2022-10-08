@@ -15,7 +15,7 @@ Spd cộng thêm từ rune:</br>
 <br/>
 <input type="button" value="Gét go" onClick="cal()" style=" border: 2px solid #4CAF50;"></br>
 Tổng spd trong trận: <span id="ans" style="font-weight:bold;color:green">0</span><br/>
-<span id="ans2" style="font-weight:bold"> </span>
+<span id="ans21">Spd để lên tick sau:</span>
 </form>
 <br/>
 Chú ý: Nếu dùng Swift thì cho 25% chung vào mục tháp hoặc leader. Spd từ rune tự cộng từng rune.
@@ -47,18 +47,18 @@ function cal() {
   let x = Math.ceil(Number(z));
   document.getElementById("ans").innerHTML = x;
   
- /* if (x >= 205 && x < 239) {
+  if (x >= 205 && x < 239) {
     var more = 239 - Number(x);
-    document.getElementById("ans2").innerHTML = "Spd cần để lên tick 239: " Number(more);
+    document.getElementById("ans21").innerHTML = "Spd cần để lên tick 239: " + more;
   }
   if (x >= 239 && x < 286) {
     var more = 286 - Number(x);
-    document.getElementById("ans2").innerHTML = "Spd cần để lên tick 286: " Number(more);
+    document.getElementById("ans21").innerHTML = "Spd cần để lên tick 286: " +  more;
   }
   if (x >= 286 && x < 358) {
     var more = 358 - Number(x);
-    document.getElementById("ans2").innerHTML = "Spd cần để lên tick 358: " Number(more);
-  }*/
+    document.getElementById("ans21").innerHTML = "Spd cần để lên tick 358: " + more;
+  }
 }
 </script>
 
