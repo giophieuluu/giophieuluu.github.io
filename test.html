@@ -7,16 +7,21 @@ Spd gốc: </br>
 <input type="number" name="firstnum" id="firstnum"></br>
 Spd cộng thêm từ rune:</br>
 <input type="number" name="secondnum" id="secondnum"></br>
-<input type="button" value="Submit" onClick="cal()"></br>
-Tính: <span id="ans"> </span>
+Tổng spd cộng thêm từ nhà, leader (max nhà+lead 24 thì nhập 39):</br>
+<input type="number" name="thirdnum" id="thirdnum"></br>
+
+<input type="button" value="Gét go" onClick="cal()"></br>
+Tổng spd trong trận: <span id="ans"> </span>
 </form>
 
 <script>
 function cal() { 
   var a = document.getElementById("firstnum").value;
   var b = document.getElementById("secondnum").value;
-  var c = Number(a) + Number(b);
-  document.getElementById("ans").innerHTML = c;
+  var c = document.getElementById("thirdnum").value;
+  var z = Number(a) * 1.Number(b) + Number(c);
+  let z = Math.ceil(Number(a));
+  document.getElementById("ans").innerHTML = z;
 }
 </script>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
