@@ -1,115 +1,22 @@
 ---
 layout: default
-title: Test
+title: Cóc
 ---
-<!-- <div id="content">
-<p><img src="/images/d5e1a39b9950e519c594ca252f634d48.jpg" width="320" /></p>
-<p><span style="font-size:12pt;"><em>Danh sách được xếp từ mới đến cũ</em></span></p>
-<hr/>
-<p class="episodepack">⭐ FULL 14 Tập <a class="downloadlink" rel="nofollow" href="https://drive.google.com/file/d/1e4aTKA5g3uEM61vCqFScxbhZPlhKAtMV/view?usp=sharing"> Subtitles 1 </a> <a class="downloadlink" rel="nofollow" href="https://drive.google.com/file/d/1Zzg58C0AIOgd1BcDW8zhb5WGf5lKyEIk/view?usp=sharing"> Subtitles 2 </a></p>
-<p class="episodeincluded">Gồm các tập sau: Come Along with Me · Diamonds &amp; Lemons · Gumbaldia · Temple of Mars · Jake the Starchild · Blenanas · The First Investigation · Marcy &amp; Hunson · Ring of Fire · Seventeen · Bonnibel Bubblegum · Son of Rap Bear · Always BMO Closing · The Wild Hunt<br /></p>
-<hr/>
-<p>🌑 Tập 14, 13, 12, 11 <a class="downloadlink" rel="nofollow" href="https://drive.google.com/file/d/1iIclB2aH7_105qZse8fbUfKJ1vSjO5yW/view?usp=sharing"> Subtitles 1 </a></p>
-<p class="episodeincluded">Gồm các tập sau: Come Along with Me · Diamonds &amp; Lemons · Gumbaldia · Temple of Mars<br /></p>
-<hr/>
-<p>🌑 Tập 10, 09, 08, 07, 06 <a class="downloadlink" rel="nofollow" href="https://drive.google.com/file/d/1vNC64CdOaH6VDnbV0gGftOynYzwY6hgI/view?usp=sharing"> Subtitles 1 </a></p>
-<p class="episodeincluded">Gồm các tập sau: Jake the Starchild · Blenanas · The First Investigation · Marcy &amp; Hunson · Ring of Fire<br /></p>
-<hr/>
-<p>🌑 Tập 05, 04, 03, 02, 01 <a class="downloadlink" rel="nofollow" href="https://drive.google.com/file/d/1vpLQryEKjbzqSscCuW82kXTcuug_xmOl/view?usp=sharing"> Subtitles 1 </a></p>
-<p class="episodeincluded">Gồm các tập sau: Seventeen · Bonnibel Bubblegum · Son of Rap Bear · Always BMO Closing · The Wild Hunt<br /></p>
-<hr/>
-</div>
+<form>
+Spd gốc: </br>
+<input type="number" name="firstnum" id="firstnum"></br>
+Spd cộng thêm từ rune:</br>
+<input type="number" name="secondnum" id="secondnum"></br>
+<input type="button" value="Submit" onClick="cal()"></br>
+Tính: <span id="ans"> </span>
+</form>
 
-<button type="button" onclick="loadDoc1()">Season1</button>
-<button type="button" onclick="loadDoc2()">Season2</button>
-<button type="button" onclick="loadDoc3()">Season3</button>
-<button type="button" onclick="loadDoc4()">Season4</button>
-<button type="button" onclick="loadDoc5()">Season5</button>
-<button type="button" onclick="loadDoc6()">Season6</button>
-<button type="button" onclick="loadDoc7()">Season7</button>
-<button type="button" onclick="loadDoc8()">Season8</button>
-<button type="button" onclick="loadDoc9()">Season9</button>
 <script>
-function loadDoc1() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("content").innerHTML =
-    this.responseText;
-  }
-  xhttp.open("GET", "season1.txt");
-  xhttp.send();
-}
-function loadDoc2() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("content").innerHTML =
-    this.responseText;
-  }
-  xhttp.open("GET", "season2.txt");
-  xhttp.send();
-}
-function loadDoc3() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("content").innerHTML =
-    this.responseText;
-  }
-  xhttp.open("GET", "season3.txt");
-  xhttp.send();
-}
-function loadDoc4() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("content").innerHTML =
-    this.responseText;
-  }
-  xhttp.open("GET", "season4.txt");
-  xhttp.send();
-}
-function loadDoc5() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("content").innerHTML =
-    this.responseText;
-  }
-  xhttp.open("GET", "season5.txt");
-  xhttp.send();
-}
-function loadDoc6() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("content").innerHTML =
-    this.responseText;
-  }
-  xhttp.open("GET", "season6.txt");
-  xhttp.send();
-}
-function loadDoc7() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("content").innerHTML =
-    this.responseText;
-  }
-  xhttp.open("GET", "season7.txt");
-  xhttp.send();
-}
-function loadDoc8() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("content").innerHTML =
-    this.responseText;
-  }
-  xhttp.open("GET", "season8.txt");
-  xhttp.send();
-}
-function loadDoc9() {
-  const xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
-    document.getElementById("content").innerHTML =
-    this.responseText;
-  }
-  xhttp.open("GET", "season9.txt");
-  xhttp.send();
+function cal() { 
+  var a = document.getElementById("firstnum").value;
+  var b = document.getElementById("secondnum").value;
+  var c = Number(a) + Number(b);
+  document.getElementById("ans").innerHTML = c;
 }
 </script>
--->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
