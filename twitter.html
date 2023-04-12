@@ -11,9 +11,9 @@ Enter link: </br>
 
 Artist: <textarea id="ans" rows="1">Characters: **Chisato Nishikigi** and **Takina Inoue**
 
-Source: https://twitter.com/fafayu_0425/status/1645387971296919552?
+Source:
 
-Artist: [FAFAYU](https://twitter.com/fafayu_0425) (@fafayu_0425)</textarea><br/>
+Artist:
 </div>
 
 <script>
@@ -22,7 +22,9 @@ function cal() {
   let text = link;
   let index1 = text.indexOf("twitter.com/");
   let index2 = text.indexOf("/",index1);
-  document.getElementById("ans").innerHTML = link; 
+  document.getElementById("ans").innerHTML = "Characters: **Chisato Nishikigi** and **Takina Inoue**
+
+Source: " + link; 
   
 }
 </script>
