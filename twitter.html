@@ -19,9 +19,10 @@ Artist:
 <script>
 function cal() { 
   var link = document.getElementById("link").value;
-  let text = link;
-  let index1 = text.indexOf("twitter.com/");
-  let index2 = text.indexOf("/",index1);
+  let removetracking = link.indexOf("?");
+  let link = link.slice(0,removetracking);
+  let index1 = link.indexOf("twitter.com/");
+  let index2 = link.indexOf("/",index1);
   document.getElementById("ans").innerHTML = "Characters: **Chisato Nishikigi** and **Takina Inoue**
 
 Source: " + link; 
