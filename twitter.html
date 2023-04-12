@@ -20,8 +20,8 @@ Artist: [FAFAYU](https://twitter.com/fafayu_0425) (@fafayu_0425)</textarea><br/>
 function cal() { 
   var link = document.getElementById("link").value
   let text = link;
-  let index = text.indexOf("twitter.com/");
-  let index = text.indexOf("/",22);
+  let index1 = text.indexOf("twitter.com/");
+  let index2 = text.indexOf("/",index1);
   document.getElementById("ans").innerHTML = link; 
   
 }
