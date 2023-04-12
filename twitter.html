@@ -9,14 +9,15 @@ Enter link: </br>
 <br/>
 <input type="button" value="Get text" onClick="cal()" style=" border: 2px solid #4CAF50;"></br>
 
-<textarea id="ans"></textarea><br/>
+<textarea id="ans">BR</textarea><br/>
 </div>
 
 <script>
 function cal() { 
   var link = document.getElementById("link").value
-  let str = link;
-  document.getElementById("ans").innerHTML = str.substring(7,13)
+  let text = link;
+  let index = text.indexOf("/",22);
+  document.getElementById("ans").innerHTML = index; 
   
 }
 </script>
