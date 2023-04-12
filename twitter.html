@@ -9,13 +9,18 @@ Enter link: </br>
 <br/>
 <input type="button" value="Get text" onClick="cal()" style=" border: 2px solid #4CAF50;"></br>
 
-Artist: <textarea id="ans" rows="1">BR</textarea><br/>
+Artist: <textarea id="ans" rows="1">Characters: **Chisato Nishikigi** and **Takina Inoue**
+
+Source: https://twitter.com/fafayu_0425/status/1645387971296919552?
+
+Artist: [FAFAYU](https://twitter.com/fafayu_0425) (@fafayu_0425)</textarea><br/>
 </div>
 
 <script>
 function cal() { 
   var link = document.getElementById("link").value
   let text = link;
+  let index = text.indexOf("twitter.com/");
   let index = text.indexOf("/",22);
   document.getElementById("ans").innerHTML = index; 
   
