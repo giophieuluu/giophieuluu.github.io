@@ -9,7 +9,7 @@ Enter link: </br>
 <br/>
 <input type="button" value="Get text" onClick="cal()" style=" border: 2px solid #4CAF50;"></br>
 
-Artist: <textarea id="ans" rows="1">Characters: **Chisato Nishikigi** and **Takina Inoue**
+<textarea id="ans" rows="1">Characters: **Chisato Nishikigi** and **Takina Inoue**
 
 Source:
 
@@ -23,7 +23,7 @@ function cal() {
   let link = oglink.slice(0,removetracking);
   let index1 = link.indexOf("twitter.com/");
   let index2 = link.indexOf("/",index1);
-  document.getElementById("ans").innerHTML = link; 
+  document.getElementById("ans").innerHTML = "Characters: **Chisato Nishikigi** and **Takina Inoue**\nSource: " + link + "\nArtist: "; 
   
 }
 </script>
