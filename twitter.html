@@ -5,31 +5,29 @@ title: Source
 <div style="background: #fff;	padding: 20px">
 <form>
 Enter link: </br>
-<input name="link" id="link"></br>
+<input name="link" id="link" value="" style="width:80%"></br>
 <br/>
-<input type="button" value="Get text" onClick="cal()" style=" border: 2px solid #4CAF50;"></br>
+<input type="button" value="Get text" onClick="cal()" style=" border: 2px solid #000000;" placeholder=""></br>
 
-<textarea id="ans" rows="4" cols="50">Characters: **Chisato Nishikigi** and **Takina Inoue**
+<textarea id="ans" rows="10"  style="width:80%" cols="70" readonly>Characters: **Chisato Nishikigi** and **Takina Inoue**
 
 Source:
 
 Artist:</textarea>
 </div>
 
-<span id ="test"></span>
-
 <script>
-function cal() { 
+function cal() {
   var oglink = document.getElementById("link").value;
   let removetracking = oglink.indexOf("?");
   let link = oglink.slice(0,removetracking);
   let index1 = link.indexOf("twitter.com/");
   let index10 = index1 + 12;
-  let index2 = link.indexOf("/",index1);
-  document.getElementById("test").innerHTML = index10 + " and " + index2; 
+  let index2 = link.indexOf("/",index10);
   let artist = link.slice(index10,index2);
-  document.getElementById("ans").innerHTML = "Characters: **Chisato Nishikigi** and **Takina Inoue**\n\nSource: " + link + "\n\nArtist: [](https://twitter.com/" + artist + ") (@" + artist + ")"; 
-  
+  let copypaste = "Characters: **Chisato Nishikigi** and **Takina Inoue**\n\nSource: " + link + "\n\nArtist: [](https://twitter.com/" + artist + ") (@" + artist + ")";
+  document.getElementById("ans").innerHTML = copypaste;
+  navigator.clipboard.writeText(copypaste);
 }
 </script>
 
