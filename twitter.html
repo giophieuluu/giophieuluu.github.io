@@ -26,7 +26,8 @@ function cal() {
   let index1 = link.indexOf("twitter.com/");
   let index2 = link.indexOf("/",index1);
   document.getElementById("test").innerHTML = index1 + " and " + index2; 
-  let artist = link.slice(index1+12,index2);
+  let index1 = index1 + 12;
+  let artist = link.slice(index1,index2);
   document.getElementById("ans").innerHTML = "Characters: **Chisato Nishikigi** and **Takina Inoue**\n\nSource: " + link + "\n\nArtist: [](https://twitter.com/" + artist + ") (@" + artist + ")"; 
   
 }
